@@ -5,3 +5,5 @@ gemspec
 group :development do
   gem 'rake'
 end
+
+gem 'pry-rails'

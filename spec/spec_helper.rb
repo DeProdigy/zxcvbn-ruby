@@ -1,5 +1,6 @@
 require 'bundler/setup'
 require 'rspec'
+require 'pry-rails'
 require 'zxcvbn'
 
 Dir[Pathname.new(File.expand_path('../', __FILE__)).join('support/**/*.rb')].each {|f| require f}
@@ -9,6 +10,8 @@ RSpec.configure do |config|
 end
 
 TEST_PASSWORDS = [
+  'somethingVERYlong',
+
   'zxcvbn',
   'qwER43@!',
   'Tr0ub4dour&3',
